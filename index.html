@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="container">
+     <div class="left-bg">
+      <h1 id="card-number-oncard">0000 0000 0000 0000</h1>
+        <p id="card-holder-name-oncard">Jane Appleseed</p>
+        <p id="card-month-year"><span id="month-oncard">00</span>/<span id="year-oncard">00</span></p>
+        <p id="cvc-oncard">000</p>
+       <img class="bg-main" src="./images/bg-main-desktop.png" alt="design-bg">
+       <img src="./images/card-logo.svg" alt="card logo" class="card-logo">
+       <img src="./images/bg-card-front.png" alt="card-front" class="front-card">
+       <img src="./images/bg-card-back.png" alt="card-back" class="back-card">
+     </div>
+     <div class="details" id="details" style="display: block;">
+      <p class="headings-p">Cardholder Name</p>
+      <input type="text" id="card-holder-name" class="card-inputs" placeholder="e.g. Jane Appleseed">
+      <h5 id="UserNameErrorLabel" style="display: none;">Username can't be in numbers or blank</h5>
+      <p class="headings-p">Card Number</p>
+      <input type="text" id="card-number" class="card-inputs" placeholder="e.g. 1234 5678 9123 0000"> 
+      <h5 id="userNumber" style="display: none;">Wrong format, numbers only</h5>
+      <div class="internal-flex">
+       <div>
+         <p class="headings-p">Exp. Date (MM/YY)</p>
+         <input type="number" id="card-month" class="card-inputs" min="1" placeholder="MM" max="12">
+         <input type="number" id="card-year" class="card-inputs" placeholder="YY" min="23" max="75" >
+         <h5 id="date-mm-yy" style="display: none;">Can't be blank</h5>
+       </div>
+       <div>
+       <p class="headings-p">CVC</p>
+       <input type="text" id="cvc" class="card-inputs" placeholder="e.g. 123">
+       <h5 id="cvc-num" style="display: none;">Can't be blank, alphabet</h5>
+       </div>
+       </div>
+       <button id="confirm">Confirm</button>
+       <!-- Completed state start -->
+     </div>
+     <div style="display: none;" id="thankyou">
+        <img src="./images/icon-complete.svg" alt="complete" class="tick-img">
+        <h1 class="thankyou-text">THANK YOU!</h1>
+       <p class="end-p">We've added your card details</p>
+        <button id="continue">Continue</button>
+     </div>
+   </div>
+   <script src="./index.js"></script>
+ </body>
+</html>

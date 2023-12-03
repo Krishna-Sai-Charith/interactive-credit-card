@@ -1,0 +1,183 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+    .container{
+        display: flex;
+        gap: 450px;
+    }
+    .bg-main{
+        height: 100vh;
+    }
+    .front-card{
+        z-index: 1;
+        position: absolute;
+        margin-left: -300px;
+        margin-top: 230px;
+    }
+    #card-number-oncard{
+        z-index: 2;
+        position: absolute;
+        margin-top: 370px;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 3px;
+        font-size: 28px;
+        margin-left: 250px;
+    }
+    #card-holder-name-oncard{
+        z-index: 2;
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin-top: 430px;
+        margin-left: 250px;
+        color: white;  
+    }
+    #card-month-year{
+        z-index: 2;
+        position: absolute;
+        margin-top: 430px;
+        margin-left: 575px;
+        letter-spacing: 1.5px;
+        color: white;
+        font-size: 14px;
+    }
+    #cvc-oncard{
+        z-index: 2;
+        position: absolute;
+        letter-spacing: 4px;
+        color: white;
+        font-size: 16px;
+        margin-top: 640px;
+        margin-left: 650px;
+    }
+    .card-logo{
+        margin-left: -265px;
+        z-index: 2;
+        margin-top: 260px;
+        position: absolute;
+    }
+    .back-card{
+        z-index: 1;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: 530px;
+    }
+    .details{
+        text-align: left;
+        margin-top: 280px;
+        width: 400px;
+        height: 400px;
+    }
+    .headings-p{
+       letter-spacing:2.2px;
+       text-transform: uppercase;
+       font-size: 12px;
+       font-weight: bold;
+       margin-bottom: 6px;
+       margin-top: 20px;
+    }
+    .card-inputs{
+        outline: none;
+        border: 1px solid #E7E7E7;
+        color: black;
+        font-size: 16px;
+        width: 370px;
+        height: 34px;
+        border-radius: 10px;
+        padding: 3px;
+        padding-left: 14px;
+        margin-bottom: 6px;
+    }
+    #card-month{
+        width: 75px;
+    }
+    #card-year{
+        width: 75px;
+    }
+    .internal-flex{
+        display: flex;
+        gap: 20px;
+    }
+    #cvc{
+        width: 157px;
+    }
+    #confirm{
+        border: 0;
+        letter-spacing:1.4px;
+        width: 390px;
+        height: 40px;
+        padding: 8px;
+        color: white;
+        margin-top: 20px;
+        background-color: #220930;
+        border-radius: 10px;
+    }
+    .thankyou-text{
+        letter-spacing: 4px;
+        margin-left: 80px;
+        margin-bottom: 20px;
+    }
+    .end-p{
+        margin-left: 65px;
+        color: #ADB5BE;
+        margin-bottom: 10px;
+    }
+    #continue{
+        border: 0;
+        letter-spacing:1.4px;
+        width: 390px;
+        height: 40px;
+        padding: 8px;
+        color: white;
+        margin-top: 20px;
+        background-color: #220930;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: translateY(2px);
+    }
+    #thankyou{
+       margin-top: auto;
+       margin-bottom: auto;
+    }
+    .tick-img{
+        margin-left: 145px;
+        margin-bottom: 25px;
+    }
+    
+.error{
+    border: 2px solid red;
+}  
+#number, #text{
+    color: black;
+}
+h5{
+    color: red;
+    margin-bottom: 6px;
+}
+#confirm:active{
+    transform: translateY(2px);
+}
+#confirm:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1800px){
+    #card-number-oncard{
+     margin-left: 200px;
+    }
+    #card-holder-name-oncard{
+        margin-left: 200px;
+    }
+    #card-month-year{
+        margin-left: 525px;
+    }
+    #cvc-oncard{
+        margin-left: 600px;
+    } 
+}
+
